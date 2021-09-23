@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>External elements</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Post Detail component</h2>
+      <div>
+        <label for="post-select">Choose a post:</label>
+        <select name="posts" id="post-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <post-detail id="1"></post-detail>
+    </main>
+
+    <script src="polyfills.js" defer></script>
+    <script src="polyfill-webcomp-es5.js" defer></script>
+    <script src="polyfill-webcomp.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="external-app.js" defer></script>
+  </body>
+</html>
